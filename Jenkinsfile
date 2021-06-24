@@ -3,7 +3,7 @@ node {
     //def server = Artifactory.newServer url: 'https://ecosysjfrog.jfrog.io/artifactory', username: 'ortil', password: 'Pass@1234'
         //def ins = Jfrog.instance('free').artifactory()
 
-    def buildInfo1 = Artifactory.newBuildInfo("as","1")
+    def buildInfo1 = Artifactory.newBuildInfo()
     def uploadSpec = """{
          "files": [
           {
